@@ -8,7 +8,6 @@ st.set_page_config(layout='wide')
 def create_df_stats_summary(dataframe, features_to_include):
     sub_df = dataframe[features_to_include].copy()
     return sub_df.describe()
-
 def create_scatterplot(dataframe, xaxis, yaxis, colour, plot_name,
                        xaxis_scale= None, yaxis_scale=None):
     fig, ax = plt.subplots()
